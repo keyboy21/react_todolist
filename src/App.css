@@ -3,6 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* .all {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1200px;
+  height: auto;
+} */
 body {
   background-image: linear-gradient(120deg, #6f65f6 0%, #85dbfd 100%);
   color: white;
@@ -19,8 +26,13 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
-form input,
+form input {
+  min-width: 300px;
+  height: 55px;
+}
+
 form button {
   padding: 0.5rem;
   font-size: 2rem;
@@ -131,9 +143,3 @@ select {
   cursor: pointer;
   pointer-events: none;
 }
-/* Transition */
-/*
-.select:hover::after {
-  transform: scale(1.5);
-}
-*/
